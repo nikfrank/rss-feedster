@@ -22,9 +22,11 @@ angular.module('cpl')
 					  ($scope.url.charCodeAt(2)||0))/3;
 			randomizer = randomizer - randomizer%1;
 
+			// this json deref is a bit magic code-y. hmmm.
 			that.items = res.rss.channel.item.slice(randomizer,randomizer+10).filter(function(d){
 			    return (typeof d.description === 'string');
 			}).map(function(d, i){
+			    // map an id onto the items, and trust the html for ng-bind-html
 			    d.description = $sce.trustAsHtml(d.description);
 			    d.id = randomizer + i;
 			    return d;

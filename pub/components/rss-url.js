@@ -7,3 +7,6 @@ angular.module('cpl')
 	    scope:{rssUrl:'=', close:'&rssUrlClose'}
 	};
     });
+
+
+// dearest Ilya, enjoy this mostly empty directive!
