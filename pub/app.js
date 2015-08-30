@@ -3,7 +3,7 @@
 angular.module('cpl', ['ngMaterial', 'ui.router', 'ngStorage', 'xml'])
     .config(function($stateProvider, $urlRouterProvider){
 
-	$urlRouterProvider.otherwise("/rss/0");
+	$urlRouterProvider.otherwise("/rss/");
 
 	$stateProvider
 	    .state('home', {
