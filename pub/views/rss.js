@@ -10,11 +10,11 @@ angular.module('cpl')
 
       this.addUrl = function(url){
 	  that.nuUrl = '';
-	  that.currentUrl = url;
-	  if(that.urls.indexOf(url)>-1) return;
-	  that.urls.push(url);
+	  if(that.urls.indexOf(url)>-1) return $state.go('home.rss', {url:encodeURIComponent(url)});
+	  that.urls.unshift(url);
 
 	  $localStorage.urls = that.urls;
+	  $state.go('home.rss', {url:encodeURIComponent(url)});
       };
 
       this.setUrl = function(url){
