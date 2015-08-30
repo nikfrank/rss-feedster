@@ -1,0 +1,16 @@
+<h1>{{url}}</h1>
+
+<md-grid-list
+   md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3"
+   md-row-height-gt-md="3:2" md-row-height="3:2"
+   md-gutter="8px" md-gutter-gt-sm="4px" >
+<!--rawspan & colspan {{item.row/col}} for different sized items-->
+  <md-grid-tile ng-repeat="item in rfd.items track by item.id"
+                md-rowspan="1"
+                md-colspan="1" 
+                md-colspan-sm="1"
+                ng-class="tile.background" >
+    <div style="width:100%;" ng-bind-html="::item.description" class="excerpt md-whiteframe-z4"></div>
+    <md-grid-tile-footer><h3>{{::item.title}}</h3></md-grid-tile-footer>
+  </md-grid-tile>
+</md-grid-list>

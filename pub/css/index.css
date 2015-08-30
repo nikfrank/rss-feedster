@@ -1,0 +1,85 @@
+.noverflow {
+    overflow:hidden;
+}
+
+.fit-to-screen{
+    max-height:100vh;
+}
+
+.fit-to-almost-screen {
+    max-height:89vh;
+}
+
+.scroller {
+    overflow-y:scroll;
+}
+
+.chip-container {
+    overflow-y:hidden;
+}
+
+.detail-chip {
+    background-color:rgb(63, 81, 181) !important;
+    color:white !important;
+
+    padding:5px;
+    border-radius:13px;
+
+    line-height:21px;
+    font-size:15px;
+    font-weight:700;
+
+    margin-bottom:4px;
+}
+
+.detail-chip.active {
+    background-color:lightblue !important;
+    color:black !important;
+}
+
+
+
+
+[rss-url] md-icon {
+    color:white;
+
+    float:right;
+}
+
+[rss-feed] {
+    width:100%;
+}
+
+
+
+
+md-grid-list {
+    height:100%;
+    width:100%;
+}
+
+md-grid-list a{
+    display:none;
+}
+
+md-grid-tile-footer {
+    background-color:rgba(149,149,149,1) !important;
+    color:black !important;
+}
+
+md-grid-tile div {
+    border:2px solid black;
+    border-radius:8px;
+    height:100%;
+
+    overflow:hidden;
+}
+
+figure div {
+    padding-top: 20px 5px 20px 5px !important;
+}
+
+md-grid-tile-footer {
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
