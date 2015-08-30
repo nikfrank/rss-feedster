@@ -5,7 +5,6 @@ angular.module('cpl')
 	var that = this;
 
 	this.get = function(url){
-console.log('url', url);
 	    var def = $q.defer();
 	    $http.post('/feed',{
 		url:url

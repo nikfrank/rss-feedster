@@ -33,7 +33,7 @@
     margin-bottom:4px;
 }
 
-.detail-chip.active {
+.active .detail-chip {
     background-color:lightblue !important;
     color:black !important;
 }

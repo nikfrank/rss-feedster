@@ -3,7 +3,7 @@
 angular.module('cpl', ['ngMaterial', 'ui.router', 'ngStorage', 'xml'])
     .config(function($stateProvider, $urlRouterProvider){
 
-	$urlRouterProvider.otherwise("/rss");
+	$urlRouterProvider.otherwise("/rss/0");
 
 	$stateProvider
 	    .state('home', {
@@ -12,7 +12,7 @@ angular.module('cpl', ['ngMaterial', 'ui.router', 'ngStorage', 'xml'])
 		controller: 'HomeCtrl as home'
 	    })
 	    .state('home.rss', {
-		url:'rss',
+		url:'rss/:url',
 		templateUrl:'views/rss.html',
 		controller:'RssCtrl as rss'
 	    });
